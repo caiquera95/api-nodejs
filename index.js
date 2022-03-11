@@ -8,6 +8,10 @@ app.get('/', (request, response) => {
     return response.json({message: 'Servidor ON'});
 })
 
+app.get('/atualizou', (request, response) => {
+    return response.json({message: 'Atualzou mesmo'});
+})
+
 app.post('/teste', (request, response) => {
     const [name, date] = request.body;
 
