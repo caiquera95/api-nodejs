@@ -5,7 +5,12 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (request, response) => {
-    return response.json({message: 'Servidor ON'});
+    return response.json(
+        {id : '1',
+        urlGithub: 'https://github.com/caiquera95',
+    }
+        
+    );
 })
 
 app.get('/atualizou', (request, response) => {
